@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: svc-ip
 spec:
+ type: LoadBalancer
   selector:
     app: nginx
   ports:
@@ -26,4 +27,4 @@ spec:
     spec:
       containers:
       - name: nginx-con
-        image: 542406542412.dkr.ecr.ap-northeast-2.amazonaws.com/nginx:4
+        image: 542406542412.dkr.ecr.ap-northeast-2.amazonaws.com/nginx:5
