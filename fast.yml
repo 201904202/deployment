@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
       - name: fast-con
-        image: alstmd1017/fast:17
+        image: alstmd1017/fast:22
