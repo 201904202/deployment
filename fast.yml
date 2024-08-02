@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fast
+  name: svc-fast
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: fast
   ports:
@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
       - name: fast-con
-        image: 542406542412.dkr.ecr.ap-northeast-2.amazonaws.com/fast:2
+        image: alstmd1017/fast:17
